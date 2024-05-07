@@ -1,0 +1,44 @@
+#root {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+body {
+  cursor: url(assets/cursor.png), auto;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+}
+
+#terminal {
+  width: 1000px;
+  height: 800px;
+}
+
+#terminal-symbols { 
+  width: 80%;
+}
+#terminal-info {
+  width: 20%;
+  display: block;
+  text-align: left;
+}
+
+.terminal-char:hover {
+  background-color: rgba(16, 255, 128, 0.7)
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
