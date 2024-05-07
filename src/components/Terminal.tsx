@@ -7,6 +7,10 @@ const Terminal = () => {
     const [info, setInfo] = useState<string[]>([''])
   return (
     <div id="terminal" className="center">
+
+        <div id="terminal-header">
+            <span>This is where the header goes</span>
+        </div>
     
         <div id="terminal-symbols">
             <GenerateCharacters 
@@ -14,14 +18,14 @@ const Terminal = () => {
                 changeInfo={setInfo}/>
             </div>
         <div id="terminal-info">
+            <span>{'> '}{selectedItem}</span>
             {
-                info.map((info) => {
+                info.slice(0, 16).map((info) => {
                     return (
                         <span>{info}</span>
                     )
                 })
             }
-            <span>{'> '}{selectedItem}</span>
         </div>
     </div>
   )
